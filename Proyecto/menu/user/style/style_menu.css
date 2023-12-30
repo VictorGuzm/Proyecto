@@ -1,0 +1,69 @@
+/* INICIO DEL CSS DEL NAV*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 2px;
+   }
+   
+   .logo img {
+    width: 80px;
+    height: auto;
+   }
+   
+   .options {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+   }
+   
+   .options li {
+    margin-left: 20px;
+    position: relative;
+   }
+   
+   nav li:hover {
+    transform: scale(1.1);
+   }
+   
+   nav li.active::after,
+   nav li:hover::after {
+    background-color: #161515;
+   }
+   
+   .options li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+   }
+   
+   .options li img {
+    width: 35px;
+    height: 35px;
+   }
+   
+   .options li p {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+    font-size: 14px;
+    color: rgb(15, 5, 5);
+    text-align: center;
+   }
+   
+   .options li:hover p {
+    display: block;
+   }
+   
+   .menu-text {
+    font-size: 14px;
+    color: rgb(180, 33, 33);
+    text-align: center;
+   }
+   /*FIN DEL CSS DEL NAV*/
