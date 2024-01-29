@@ -1,0 +1,134 @@
+/* INICIO DEL CSS DEL NAV*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 2px;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+.options {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.options li {
+  margin-left: 20px;
+  position: relative;
+}
+
+nav li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+nav li:hover a {
+  transform: scale(1.1);
+  color: #161515;
+}
+
+.options li img {
+  width: 35px;
+  height: 35px;
+}
+
+.options li p {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25px;
+  font-size: 14px;
+  color: rgb(15, 5, 5);
+  text-align: center;
+}
+
+.options li:hover p {
+  display: block;
+}
+
+.menu-text {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.active::after,
+nav li:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #200a9e;
+  left: 0;
+  bottom: 5px;
+}
+   /*FIN DEL CSS DEL NAV*/
+   body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif; 
+  }
+
+.admin {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.admin h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+.admin-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.admin-info span {
+    font-size: 16px;
+    color: #868e96;
+}
+
+.admin-info span:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.admin img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.admin h1 {
+    text-align: center;
+}
+
+.admin-info {
+    text-align: center;
+}
+
+.admin-info span {
+    display: block;
+}

@@ -1,0 +1,136 @@
+/* INICIO DEL CSS DEL NAV*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 2px;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+.options {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.options li {
+  margin-left: 20px;
+  position: relative;
+}
+
+nav li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+nav li:hover a {
+  transform: scale(1.1);
+  color: #161515;
+}
+
+.options li img {
+  width: 35px;
+  height: 35px;
+}
+
+.options li p {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25px;
+  font-size: 14px;
+  color: rgb(15, 5, 5);
+  text-align: center;
+}
+
+.options li:hover p {
+  display: block;
+}
+
+.menu-text {
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.active::after,
+nav li:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #200a9e;
+  left: 0;
+  bottom: 5px;
+}
+   /*FIN DEL CSS DEL NAV*/
+   body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+   }
+   
+   .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+   }
+   
+   .reporte {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+   }
+   
+   .reporte img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+   }
+   
+   .reporte h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+   }
+   
+   .reporte button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+   }
+   
+   .reporte button.diario {
+    background-color: #2a3094; 
+    color: white;
+   }
+   
+   .reporte button.semanal {
+    background-color: #f3215d; 
+    color: white;
+   }
+   
+   .reporte button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+   }
